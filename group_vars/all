@@ -1,0 +1,11 @@
+---
+ansible_user: ansible
+
+nomad_binary_directory: /usr/local/bin
+nomad_bootstrap_directory: /etc/nomad.d
+nomad_data_directory: /opt/nomad
+nomad_temporary_directory: /tmp
+nomad_version: 1.1.3
+
+datacenter_name: dc1
+domain_name: local.com

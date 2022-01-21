@@ -1,0 +1,15 @@
+server {
+  enabled = true
+  bootstrap_expect = 3
+}
+
+bind_addr = "{{ advertise_ip }}"
+
+advertise {
+  http = "{{ advertise_ip}}"
+}
+
+client {
+  enabled = true
+}
+
