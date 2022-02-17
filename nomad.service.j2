@@ -6,7 +6,7 @@ After=network-online.target
 
 [Service]
 ExecReload=/bin/kill -HUP $MAINPID
-ExecStart={{ nomad_binary_directory }}/nomad agent -config /etc/nomad.d
+ExecStart={{ nomad_binary_directory }}/nomad agent -config {{ nomad_bootstrap_directory }}
 KillMode=process
 KillSignal=SIGINT
 LimitNOFILE=infinity
