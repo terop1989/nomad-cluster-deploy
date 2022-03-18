@@ -1,16 +1,4 @@
 ---
-- hosts: localhost
-  become: no
-  gather_facts: false
-  
-  tasks:
-
-  - name: Download Nomad Package
-    get_url:
-      url: "https://releases.hashicorp.com/nomad/{{ nomad_version }}/nomad_{{ nomad_version }}_linux_amd64.zip"
-      dest: "{{ nomad_temporary_directory }}"
-
-
 - hosts: all
   become: yes
   become_method: sudo
