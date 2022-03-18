@@ -1,4 +1,0 @@
-[servers]
-consul01.local.com     advertise_ip=192.168.0.111
-elastic01.local.com    advertise_ip=192.168.0.150
-nomad01.local.com      advertise_ip=192.168.0.112
